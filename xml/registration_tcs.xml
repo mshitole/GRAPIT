@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suites>
+    <suite name="Registration">
+        <url>
+          <ishttps>1</ishttps>
+          <domain>reqres.in</domain>
+        </url>
+        <apis>
+            <api>
+                <locator>/api/register</locator>
+                <method>post</method>
+                <input>
+                    <email>sydney@fife</email>
+                    <password>pistol</password>
+                </input>
+                <output>
+                    <status>201</status>
+                </output>
+            </api>
+            <api>
+                <locator>/api/register</locator>
+                <method>post</method>
+                <input>
+                    <email>sydney@fife</email>
+                </input>
+                <output>
+                    <status>400</status>
+                    <error>Missing password</error>
+                </output>
+            </api>
+        </apis>
+    </suite>
+</suites>

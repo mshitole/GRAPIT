@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suites>
+    <suite name="CRUD">
+        <url>
+          <ishttps>1</ishttps>
+          <domain>reqres.in</domain>
+        </url>
+        <apis>
+            <api>
+                <locator>/api/users?page=2</locator>
+                <method>get</method>
+                <output>
+                    <status>200</status>
+                    <page>2</page>
+                </output>
+            </api>
+            <api>
+                <locator>/api/users/2</locator>
+                <method>get</method>
+                <output>
+                    <status>200</status>
+                </output>
+            </api>
+            <api>
+                <locator>/api/users/23</locator>
+                <method>get</method>
+                <output>
+                    <status>404</status>
+                </output>
+            </api>
+            <api>
+                <locator>/api/users</locator>
+                <method>post</method>
+                <input>
+                    <name>morpheus</name>
+                    <job>leader</job>
+                </input>
+                <output>
+                    <status>201</status>
+                    <name>morpheus</name>
+                    <job>leader</job>
+                </output>
+            </api>
+            <api>
+                <locator>/api/users/2</locator>
+                <method>put</method>
+                <input>
+                    <name>morpheus</name>
+                    <job>zion resident</job>
+                </input>
+                <output>
+                    <status>200</status>
+                    <name>morpheus</name>
+                    <job>zion resident</job>
+                </output>
+            </api>
+            <api>
+                <locator>/api/users/2</locator>
+                <method>delete</method>
+                <output>
+                    <status>204</status>
+                </output>
+            </api>
+        </apis>
+    </suite>
+</suites>
