@@ -170,4 +170,4 @@ python test.py
 
 After executing it will generate result in log.html in the same directory
 # Output format
-please visit http://htmlpreview.github.io/?https://github.com/greatsoftwarelab/GRAPIT/blob/b8c3af7c297b46acbf9dcb1d840db61af7285443/logs.html
+please visit http://htmlpreview.github.io/?https://github.com/mshitole/GRAPIT/blob/master/logs.html
